@@ -68,7 +68,7 @@ class EmployeeForm extends React.Component {
                     />
                 </div>
 
-                <button type="submit">Submit Employee</button>
+                <button type="submit">Add Employee</button>
                 {/*<button type="button" onClick={this.props.saveData}>Now Save</button>*/}
             </form>
         );
