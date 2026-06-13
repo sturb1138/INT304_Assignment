@@ -2,20 +2,42 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
-  
+
+  .employee-form h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .employee-form .form-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
   .employee-form label {
-    margin-bottom: 0.5rem;
+    width: 110px;
+    text-align: right;
+    margin-right: 1rem;
+    flex-shrink: 0;
   }
   
   .employee-form input {
+    flex: 1;
     padding: 0.5rem;
-    margin-bottom: 1rem;
     border-radius: 0.25rem;
     border: 1px solid #ccc;
   }
   
   .employee-form button {
+    margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: #0077cc;
     color: #fff;
@@ -52,6 +74,26 @@
     text-decoration: none;
   }
 
+  .employee-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .delete-btn {
+    padding: 0.2rem 0.5rem;
+    background-color: #cc0000;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+
+  .delete-btn:hover {
+    background-color: #aa0000;
+  }
+
   .employee-detail {
     display: flex;
     flex-direction: column;
@@ -85,4 +127,8 @@
     background-color: #0077cc;
     color: white;
   }
-  
+
+  .removed-list li {
+    color: #888;
+    text-decoration: line-through;
+  }
